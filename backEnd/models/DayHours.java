@@ -1,4 +1,4 @@
-package models;
+package backEnd.models;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package models;
+package backEnd.models;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

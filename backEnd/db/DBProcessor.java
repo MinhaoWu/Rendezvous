@@ -1,4 +1,4 @@
-package db;
+package backEnd.db;
 
 /* call google API
   {
@@ -15,7 +15,7 @@ package db;
 import java.sql.*;
 import java.time.LocalDate;
 
-import models.Schedule;
+import backEnd.models.Schedule;
 
 public class DBProcessor {
 
