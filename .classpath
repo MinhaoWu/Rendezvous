@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" path="backEnd"/>
+	<classpathentry kind="src" path="frontEnd"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path=""/>
 	<classpathentry kind="lib" path="/usr/local/Cellar/tomcat/9.0.30/libexec/lib/servlet-api.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="https://javaee.github.io/javaee-spec/javadocs/"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/maxfried_CSCI201L_Assignment1/gson-2.8.6.jar"/>
-	<classpathentry kind="output" path=""/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>

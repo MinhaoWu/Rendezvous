@@ -1,12 +1,12 @@
-package backEnd.utils;
+package utils;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import backEnd.db.DBProcessor;
-import backEnd.models.DayHours;
-import backEnd.models.GoogleCalendar;
-import backEnd.models.Schedule;
+import db.DBProcessor;
+import models.DayHours;
+import models.GoogleCalendar;
+import models.Schedule;
 
 public class TableBuilder {
 	

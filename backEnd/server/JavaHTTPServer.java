@@ -1,4 +1,5 @@
-package backEnd.workInProgress.Server;
+package server;
+
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

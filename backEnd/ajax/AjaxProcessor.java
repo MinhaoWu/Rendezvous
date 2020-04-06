@@ -1,4 +1,4 @@
-package backEnd.ajax;
+package ajax;
 
 import java.io.PrintWriter;
 
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 
 import com.google.gson.Gson;
 
-import backEnd.utils.TableBuilder;
+import utils.TableBuilder;
 
 
 public class AjaxProcessor  {
