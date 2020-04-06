@@ -9,5 +9,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/maxfried_CSCI201L_Assignment1/gson-2.8.6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
