@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style.css" rel="stylesheet" />
+	<title>Home Temp Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">	
+	<style type="text/css">
+		body{
+			background-color: white;
+			font-family: 'Roboto', sans-serif;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<!-- MAILANI'S CODE FOR POP UP -->	
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item active">Rendezvous🌀</li>
+	</ol>
+	<div class="container main">
+	
+		<div class="container">
+			<div class="row">
+				<h1 class="col-12 mt-4 mb-4">Temporary Home</h1>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+		    
+	        <form action="NavBarServlet" method="POST">
+	          <hr>
+	          
+	          <button type="submit" class="btn">Go to next page</button>
+	          <!-- MAILANI'S CODE FOR PASSING IN USER -->
+			 <input value="3" class ="hidden" name="user">
+			  <!-- MAILANI'S CODE FOR PASSING IN USER -->
+	        </form>
+	      
+		    
+	</div> <!-- .container -->
+	
+	<!-- MAILANI'S CODE FOR POP UP -->
+
+	<script src="PopFunctions.js"></script>
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	
+</body>
+</html>
