@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="google-signin-scope" content="profile email">
+	<meta name="google-signin-client_id" content="716240911606-iurfuk50hasuf1b6rhg9ppcia90114dm.apps.googleusercontent.com">
+	<title>Login Landing | Rendezvous</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+	<style>
+		body, html {
+			padding: 0px;
+			margin: 0px;
+		}
+		/*body {
+			background-image: url("img/cover.jpg");
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}*/
+		#cover {
+			width: 100%;
+			z-index: -1;
+		}
+		#login {
+			background-color: white;
+			width: 510px;
+			height: 340px;
+			border-radius: 3%;
+			box-shadow: 0px 5px 20px grey;
+			/*display: table;*/
+
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-left: -255px;
+			margin-top: -170px;
+		}
+		#title {
+			text-align: center;
+			/*display: table-cell;
+			vertical-align: middle;*/
+			padding-top: 90px;
+			font-family: 'Lora', serif;
+		}
+		#title h1 {
+			font-weight: bold;
+		}
+		#title h5 {
+			color: grey;
+			padding-top: 10px;
+		}
+		/*#loginButton {
+			text-align: center;
+			padding-top: 30px;
+		}*/
+	</style>
+</head>
+<body>
+	<img id="cover" src="img/cover1.jpg" alt="cover">
+	<div id="login">
+		<div id="title">
+			<h1>Rendezvous</h2>
+			<h5>Carpe diem</h4>
+		</div>
+		
+		<!-- <div id="loginButton">
+			<p>google button holder</p>
+		</div> -->
+		<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+	</div>
+	
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script>
+		// function onSuccess(googleUser) {
+	 //      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+	 //    }
+	    function onFailure(error) {
+	      console.log(error);
+	    }
+	    // function renderButton() {
+	    //   gapi.signin2.render('my-signin2', {
+	    //     'scope': 'profile email',
+	    //     'width': 240,
+	    //     'height': 50,
+	    //     'longtitle': true,
+	    //     'theme': 'dark',
+	    //     'onsuccess': onSuccess,
+	    //     'onfailure': onFailure
+	    //   });
+	    // }
+	    function onSignIn(googleUser) {
+	        // Useful data for your client-side scripts:
+	        var profile = googleUser.getBasicProfile();
+	        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+	        console.log('Full Name: ' + profile.getName());
+	        console.log('Given Name: ' + profile.getGivenName());
+	        console.log('Family Name: ' + profile.getFamilyName());
+	        console.log("Image URL: " + profile.getImageUrl());
+	        console.log("Email: " + profile.getEmail());
+
+	        // The ID token you need to pass to your backend:
+	        var id_token = googleUser.getAuthResponse().id_token;
+	        console.log("ID Token: " + id_token);
+	      }
+	    
+	</script>
+
+</body>
+</html>
